@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container{
+    background-color: red;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.nav-content{
+    width: 100vw;
+    height: 5vh;
+    background-color: blue;
+}
+.nav-content h1{
+    font-family: 'Inknut Antiqua',serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: red;
+    text-align: center;
+}
+
+
+
+
+main{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+}
+main .main-content{
+    background-color: green;
+    display: flex;
+    flex-basis: 90vw;
+}
+main aside{
+    background-color: #FFFFFF;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    row-gap:1rem;
+    align-items: center;/*x-axis*/
+    /*justify-content: center;  y-axis*/
+    padding: 0 1rem;
+}
+
+
+main aside div{ 
+    background-color: #cecece;
+    width: 100%;
+    height: 1px;
+    margin-top: 3rem;
+}
+
+aside h5{
+    font-family: 'Montserrat',serif;
+    color:#B6C4B6;
+    align-self:flex-start;
+    font-size: 1rem;
+}
+
+aside ul{
+    margin-top:0.2rem;
+}
+aside ul li{
+    padding: 1rem 0; 
+    margin-left: 2rem;
+    width: 18vw;
+}
+aside ul li a{
+    cursor: pointer;
+    width: 100vh;
+    font-size: 1.6rem;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    color: #000000;  
+    padding: 0.4rem 0.4rem;
+}
+aside ul li a:hover{
+    background-color: #AFC8AD;
+    border-radius: 0.5rem;   
+}

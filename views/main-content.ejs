@@ -1,0 +1,67 @@
+<div class="absolute z-10 top-48 h-auto sm:top-64 w-full md:w-auto font-montserrat font-normal rounded-2xl py-8 bg-slate-100 bg-opacity-20 md:bg-transparent ml-5">
+  <ul>
+    <li class="product-item ">
+      <div onclick="toggleAccordion('accordion-content-1')">
+        <h3 class="product-title">BIM MODELING</h3>
+      </div>
+      <div id="accordion-content-1" class="accordion-content text-xl hidden px-5 ">
+        <div class="flex flex-col items-start">
+          <a class="sub-product-link" href="/bim/point-cloud-modeling">Point Cloud Modeling</a>
+          <a class="sub-product-link" href="/bim/model-creation">BIM Model Creation</a>
+          <a class="sub-product-link" href="/bim/dynamo-scripting">Dynamo-Scripting</a>
+        </div>
+      </div>
+    </li>
+    <li class="product-item">
+      <div onclick="toggleAccordion('accordion-content-2')">
+        <h3 class="product-title">CAD</h3>
+      </div>
+      <div id="accordion-content-2" class="accordion-content text-xl hidden px-5 ">
+        <div class="flex flex-col items-start">
+          <a class="sub-product-link" href="/cad/design-doc">CAD Design - Documentation</a>
+          <a class="sub-product-link" href="/cad/digital-prototyping">Digital Prototyping</a>
+          <a class="sub-product-link" href="/cad/design-auto">Design Automation</a>
+          <a class="sub-product-link" href="/cad/3d-configs">3D Configurators</a>
+        </div>
+      </div>
+    </li>
+    <li class="product-item">
+      <div onclick="toggleAccordion('accordion-content-3')">
+        <h3 class="product-title">SOFTWARE</h3>
+      </div>
+      <div id="accordion-content-3" class="accordion-content text-xl hidden px-5 ">
+        <div class="flex flex-col items-start">
+          <a class="sub-product-link" href="/software/stand-apps">Standalone Applications</a>
+          <a class="sub-product-link" href="/software/cad-plugins">CAD Based Plugins</a>
+          <a class="sub-product-link" href="/software/bim-plugins">BIM Based Plugins</a>
+        </div>
+      </div>
+    </li>
+    <li class="product-item">
+      <h3 class="product-title" href="/about">ABOUT</h3></li>
+  </ul>
+</div>
+<script>
+function toggleAccordion(contentId) {
+  var content = document.getElementById(contentId);
+
+  // Diğer tüm açık olanları kapat
+  var allContents = document.querySelectorAll('.accordion-content');
+  allContents.forEach(function(item) {
+    if (item.id !== contentId) {
+      item.style.display = 'none';
+    }
+  });
+
+  // Seçilenin durumunu değiştir
+  if (content.style.display === 'block') {
+    content.style.display = 'none';
+  } else {
+    content.style.display = 'block';
+  }
+}
+
+
+
+</script>
+<!--transition ease-in-out duration-1000 bg-neutral-200 bg-opacity-40 hover:bg-opacity-15 -->

@@ -1,0 +1,15 @@
+<%- include('partials/_head'); %>
+
+<body >
+    <div class="w-full relative flex flex-col">
+        <%- include('partials/header'); %>
+        <main class="h-full w-full relative z-0 left-0 top-0 row-start-1">
+            <div class="relative h-screen w-full">
+                <img src="./images/home-bg.png" alt="" class="h-screen w-screen bg-no-repeat bg-cover bg-center blur-sm absolute z-0">
+                <%- include('main-content'); %>
+            </div>    
+        </main>
+        <%- include('partials/footer'); %>
+    </div>
+</body>
+</html>
